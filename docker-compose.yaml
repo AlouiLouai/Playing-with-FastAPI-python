@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  
+  fastapi:
+    image: backend
+    build:
+      dockerfile: dockerfile
+      context: .
+    environment:
+      PORT: 8000
+    ports:
+      - 8000:8000
