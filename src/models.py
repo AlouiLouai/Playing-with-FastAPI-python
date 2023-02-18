@@ -7,8 +7,8 @@ class Blog(BaseModel):
     title: str = Field(...)
     content: str = Field(...)
     author: str = Field(...)
-    upVote: str = Field(...)
-    downVote: str = Field(...)
+    upVote: int = Field(...)
+    downVote: int = Field(...)
     
     # since FastAPI allow to test endpoints by providing a REST API swagger interface , we need to pass a static object to be displayed as payload in the POST request in interface
     # that's what exactly schema_extra do

@@ -5,7 +5,7 @@ services:
   fastapi:
     image: backend
     build:
-      dockerfile: dockerfile
+      dockerfile: app/dockerfile
       context: .
     environment:
       PORT: 8000
